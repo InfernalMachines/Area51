@@ -23,10 +23,10 @@ function allCities(){
 	var myStringArray = ["Warren","Washington","Wilkes-Barre", "Williamsport","York"]
 	var shorties = [];
 
-for ( i = 0; i < 5 ; i++) {
+	for ( i = 0; i < 5 ; i++) {
 	if (myStringArray[i].length < 8) {
 		//store in new array
-		shorties.push(myStringArray[i]);
+	shorties.push(myStringArray[i]);
 	};
 	};
 	//joined the resuts in new array I'm lame called it new array
@@ -38,7 +38,6 @@ console.log(allCities());
 
 // Call myFunc function - justForFun 
 function myFunc(){
-alert(allCities());
+	alert(allCities());
 };
 
-//look up Array.prototype.concat()
