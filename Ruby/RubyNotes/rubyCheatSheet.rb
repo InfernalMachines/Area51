@@ -118,5 +118,22 @@ name_array = full_name.split(//)
 #aray from string split every new char
 name_array = full_name.split(/ /) #or comma split based on spaces
 #------------------------------------------------
+# string conversions
+	to_i # to integer
+	to_f # to float
+	to_sym # symbol
+
+	#escape objects
+	# \\ backslah
+	# \' single-quote
+	# \" double-quote
+	# \a Bellb backspace
+	# \f formfeed
+	# \n newline
+	# \r Carriage
+	# \t Tab
+	# \v Vertical tab
+#---------------------------------------
+
 
 
