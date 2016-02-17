@@ -52,3 +52,71 @@ def check_(age)
 	puts "Enter positive Num"
 end
 #---------------------------
+# Strings
+puts "Add Them #{4+5}"
+# single quote vs double
+puts 'Add Them #{4 + 5}'
+
+# multiline String <<EOM  EOM
+multiline_string = <<EOM 
+very long Strings
+asasdf #{4+5} \n\n
+EOM
+
+# continue strings
+first_name = "Derek"
+last_name = "Banas"
+full_name = first_name + last_name #Concantanate String
+middle_name = "justin"
+
+full_name= "#{first_name}#{middle_name}#{last_name}"
+# Combine with interpolation
+# In the mathematical field of numerical analysis, 
+# interpolation is a method of constructing
+# new data points within the range of a discrete
+# set of known data points.
+
+puts full_name.include?("justin")
+#search for something inside a string
+put full_name.size
+puts"vowels: " + full_name.count("aeiou").to_s
+puts "consonants : " + full_name.count("^aeiou").to_s
+# ^ Caret symbol searches everything opposite of
+puts full_name.start_with?("Banas")
+# check string starts with another string
+puts "index :" full_name.index("Banas").to_s
+# get index or char number
+
+# Check string equality
+puts "a == a" + ("a" == "a") # True
+puts "\"a\".equal?(\"a\") : " + ("a".equal?"a").to_s
+#Check to see if something is exacly the same as another
+# to use double "" put "\" inside 
+puts first_name.equal?first_name # True
+
+puts full_name.upcase	#all UPPERCASE
+puts full_name.downcase #all lowercase
+puts full_name.swapcase #dEREK jUSTIN
+
+full_name = "         " + full_name
+fll_name = full_name.lstrip #delete white space left
+fll_name = full_name.rstrip #delete white space right
+fll_name = full_name.strip #delete all white strip
+
+# formatting strings
+puts full_name.rjust(20, '.')
+puts full_name.ljust(20, '.')
+puts full_name.center(20, '.')
+# Justifies text 
+
+puts full_name.chop #chop off las char
+puts full_name.chomp('as') #eliminates new line if it 
+#exists can even eliminate char
+
+puts full_name.delete("a")# deletes every occurance of a
+name_array = full_name.split(//) 
+#aray from string split every new char
+name_array = full_name.split(/ /) #or comma split based on spaces
+#------------------------------------------------
+
+
